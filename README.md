@@ -3,10 +3,11 @@ Simple MIDI hander for Python 3.4
 
 ## System requirements
 - Windows XP
-- MIDI Device
+- Functioning sound card with MIDI synth (or any other MIDI device)
+- MIDI input (usually the gameport on a sound card)
 - VIA C3-1000A (Intel Pentium 4 equivalent or higher recommended)
 - 384 MB RAM (1GB or more recommended)
-- 200 MB available disk space (100 MB if drivers are already installed)
+- 100 MB available disk space
 
 ## Prerequisites
 - [Python 3.4.4](https://www.python.org/ftp/python/3.4.4/python-3.4.4.msi)
@@ -28,5 +29,8 @@ Simple MIDI hander for Python 3.4
 
 ## Files overview
 ### Scripts
-- LIVE_Dumb_Daemon.py - main application that does everything important. Run at boot time or whenever you wish. Requires that USBLCDServer also be running.
+- LIVE_Dumb_Daemon.py - main application that does everything important. Run at boot time or whenever you wish.
 - get_ports.py - show all the midi ports available on the system (this is needed to set up synth.cfg)
+
+### Config
+- synth.cfg - specifies the MIDI-in port to listen, and the MIDI-out port to forward incoming events.
