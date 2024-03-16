@@ -1,4 +1,4 @@
-# live-dumb-daemon
+# live-daemon
 Simple MIDI hander for Python 3.4
 
 ## System requirements
